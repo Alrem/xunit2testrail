@@ -30,5 +30,6 @@ $CMD report -v \
 --testrail-name-template '{title}' \
 --xunit-name-template '{classname}.{methodname}' $REPORT
 
+EXIT_CODE=$?
 
-test $DEBUG && /bin/bash
+test $DEBUG && /bin/bash || exit $EXIT_CODE
