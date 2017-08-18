@@ -31,5 +31,7 @@ $CMD report -v \
 --xunit-name-template '{classname}.{methodname}' $REPORT
 
 EXIT_CODE=$?
-
+echo "----------------------------------------------------------"
+echo "---------- Report has finished with exit code $EXIT_CODE ----------"
+echo "----------------------------------------------------------"
 test $DEBUG && /bin/bash || exit $EXIT_CODE
