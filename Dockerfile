@@ -13,6 +13,7 @@ WORKDIR /opt/
 
 RUN pip install xunit2testrail
 
+ENV PASTE_BASE_URL=""
 ENV TESTRAIL_PLAN_NAME="[MCP1.1]All-In-One"
 ENV SHORT_TEST_GROUP="All-In-One"
 ENV TESTRAIL_URL="https://mirantis.testrail.com"
